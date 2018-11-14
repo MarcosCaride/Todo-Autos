@@ -1,0 +1,3 @@
+jQuery(".q-js-nav-anchor .q-js-dropdown-item").on("click", function() {
+	jQuery(window).trigger("sticky");
+});

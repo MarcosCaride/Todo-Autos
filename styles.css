@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:700');
+.home{
+  text-align: left;
+}
+.marcas{
+  text-align: center;
+}
+ * {
+   padding: 0;
+   margin: 0;
+ }
+ i{
+   /* width: 100px; */
+   font-size: 100px;
+ }
+ nav {
+   background-color: #aeb4bf;
+   /* align-items: left; */
+ }
+
+ ul {
+   list-style: none;
+ }
+
+ a {
+
+   text-decoration: none;
+   text-align: center;
+   font-weight: bold;
+ }
+
+ #menu {
+   width: 100%;
+   margin: 0 auto;
+   overflow: hidden;
+   /* background-color: rgb(1, 8, 6); */
+
+ }
+ #menu li{
+   background-color: rgb(1, 0, 0);
+
+ }
+
+ #menu li a {
+   background-color: #aeb4bf;
+   color: white;
+   display: block;
+   padding: 10px;
+   min-width: 200px;
+          border-left: 1px solid white;
+
+ }
+
+ #menu>li>ul a {
+   background-color: #EEE;
+   color: black;
+   padding: 10px;
+   display: block;
+   min-width: 200px;
+
+ }
+
+ #menu li>a:hover {
+   color: black;
+   background-color: rgb(3, 1, 5);
+ }
+
+ #menu>li {
+   float: left;
+   width: 20%;
+   text-align: center;
+ }
+
+ #menu>li>ul {
+   display: none;
+ }
+
+ #menu>li:hover ul {
+   display: block;
+   position: absolute;
+   background-color: rgba(209, 209, 209,0.75);
+   color: black;
+   z-index: 1;
+ }
+ * {
+  box-sizing: border-box;
+}
+ul{
+  width: 20%;
+}
+ul li a{
+  background-color: rgba(209, 209, 209,0.30) !important;
+
+}
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: right;
+  /*width: 15%;*/
+  background: #f1f1f1;
+
+}
+
+/* Style the submit button */
+form.example button {
+  float: right;
+/*  width: 5%;*/
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+label{
+  color: black;
+
+}
+
+
+
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+
+	animation: 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+  object-fit: contain;
+}
+.carousel-inner img{
+
+  width: 100%;
+  object-fit: contain;
+
+}
+
+.carousel-inner{
+   height: 520px; */
+}
+.logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+body{
+  /* font-family: "Signika", sans-serif!important; */
+  font-family: 'Oswald', sans-serif !important;
+  color: black!important;
+  background-image: url(./imagenes/fondo4.jpg);
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-size: cover;
+  }
+
+  .miclase .item img{
+    width: 100%!important;
+  }
+
+
+
+
+
+
+
+h2{
+  text-align: center;
+  text-decoration: underline;
+
+
+}
+.logo_marcas{
+
+}
+.logo_marcas img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+}
+h1{
+  text-align: center;
+  text-decoration: underline;
+
+}
+.legal{
+  text-align: center;
+}
+
+.fa-user{
+  color: white;
+}
+.fa-home{
+  color: white;
+}
+
+.item{
+  height: 100%!important;
+}
+.item img{
+  height: 100%!important; width: 100%!important;
+}
+#fotosslides{
+  object-fit: cover;
+
+}
+.home{
+  background-color: blue;
+}
+.infomarcas{
+  text-align: center;
+  font-size: 25px;
+}
+
+form{
+width: 50%;
+margin-left: 25%;
+
+}

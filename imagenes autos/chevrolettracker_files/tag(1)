@@ -1,0 +1,179 @@
+BrightTag.site('VxPDXsr',function(s){
+s.script('//s.btstatic.com/lib/20082c8f5a498e72020be44646aed00b68ae5025.js?v\x3d2').script('//s.btstatic.com/lib/d0117244d44a78ff00c0169aeb91edb783dc9870.js?v\x3d2').script('//s.btstatic.com/lib/11e95acb647ab8582055099a4c077bbd28e6b17a.js?v\x3d2').wait(function(){
+s.dbe('tag subgroup: non-reporting function', '\x22N\x22\r\n',{pageId:2886270});
+s.dbe('persistent browser id', 'localStorage.getItem(\x27pbid\x27)',{pageId:2886270});
+s.dbe('screen size', 'try {\r\n\tif(digitalData.pageInfo !\x3d undefined) {\r\n\t\tdigitalData.pageInfo.renderedExperience.toLowerCase();\r\n\t} else {digitalData.renderedExperience.toLowerCase();\t\r\n\t}\r\n} catch(e) {\r\n\tif (window.innerWidth \x3c 400) {\r\n\r\n    \x22small\x22;\r\n\t} else if (window.innerWidth \x3e 400 \x26\x26 window.innerWidth \x3c 768) {\r\n\r\n    \x22medium\x22;\r\n\t} else {\r\n    \x22large\x22;\r\n\t}\r\n}',{pageId:2886270});
+s.dbe('tag group: non-reporting function', '\x22NRF\x22\r\n',{pageId:2886270});
+s.dbe('signal universal id', '\x27XNlnaAWNKNXpW1CfhKUA49QyZgGKnITM+U2eC8CYCwk\\x3d\x27');
+s.dbe('current url', 'location.href;',{pageId:2886270});
+s.dbe('referring url', 'if(document.referrer.length \x3c\x3d 0){\x27no referring URL\x27}else{document.referrer.split(/\\?/)[0];}',{pageId:2886270});
+s.dbe('session id', 'sessionStorage.getItem(\x27csid\x27);',{pageId:2886270});
+s.events.bind('gallery',window,'photogallery',{pageId:3721461});
+s.events.bind('image carousel',window,'imgcarousel',{pageId:3721461});
+s.events.bind('color swatch',window,'color',{pageId:3721461});
+s.events.bind('sticky navigation',window,'sticky',{pageId:3721461}).dbe('tab name','(function(){\r\n\r\nfunction replaceLetters(word){\r\nvar letters \x3d  [\x22\xe1\x22, \x22\xe9\x22, \x22\xed\x22, \x22\xf3\x22, \x22\xfa\x22, \x22\xfc\x22, \x22\xf1\x22];\r\nvar correctLetters \x3d [\x22a\x22, \x22e\x22, \x22i\x22, \x22o\x22, \x22u\x22, \x22u\x22, \x22n\x22];\r\n\r\nvar length \x3d letters.length;\r\n\r\nfor(var i \x3d 0; i \x3c length; i++){\r\nvar index \x3d word.indexOf(letters[i]);\r\nif(index !\x3d\x3d -1){\r\nvar regex \x3d new RegExp(word[index], \x27g\x27);\r\nword \x3d word.replace(regex, correctLetters[i]);\r\n}\r\n\r\n}\r\nreturn word;\r\n} \r\n\r\n    try{ \r\n var nav \x3d jQuery(eventObject.currentTarget).text().toLowerCase().trim(); \r\n   \r\n    if(nav.length \x3d\x3d\x3d0){ return \x27unable to extract data\x27;}\r\n    return replaceLetters(nav);} \r\ncatch(e){\x27unable to extract data\x27}}());');
+s.events.bind('time complete',window,'timeComplete',{pageId:3721461});
+s.events.on('time complete').fire(6665318);
+s.when('bt_data(\x27current url\x27).indexOf(\x22prisma\x22) \x3e -1',function(){
+s.events.on('color swatch').fire(6665323);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22onix\x22) \x3e -1',function(){
+s.events.on('color swatch').fire(6665326);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22cobalt\x22) \x3e -1',function(){
+s.events.on('color swatch').fire(6665332);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22cruze\x22) \x3e -1',function(){
+s.events.on('color swatch').fire(6665337);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22spin\x22) \x3e -1',function(){
+s.events.on('color swatch').fire(6665340);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22trailblazer\x22) \x3e -1',function(){
+s.events.on('color swatch').fire(6665346);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22tracker\x22) \x3e -1',function(){
+s.events.on('color swatch').fire(6665351);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22equinox\x22) \x3e -1',function(){
+s.events.on('color swatch').fire(6665354);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22captiva\x22) \x3e -1',function(){
+s.events.on('color swatch').fire(6665360);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22montana\x22) \x3e -1',function(){
+s.events.on('color swatch').fire(6665365);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22s10\x22) \x3e -1',function(){
+s.events.on('color swatch').fire(6665368);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22camaro\x22) \x3e -1',function(){
+s.events.on('color swatch').fire(6665374);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22prisma\x22) \x3e -1',function(){
+s.events.on('image carousel').fire(6665379);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22onix\x22) \x3e -1',function(){
+s.events.on('image carousel').fire(6665382);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22cobalt\x22) \x3e -1',function(){
+s.events.on('image carousel').fire(6665388);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22cruze\x22) \x3e -1',function(){
+s.events.on('image carousel').fire(6665393);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22spin\x22) \x3e -1',function(){
+s.events.on('image carousel').fire(6665396);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22trailblazer\x22) \x3e -1',function(){
+s.events.on('image carousel').fire(6665402);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22tracker\x22) \x3e -1',function(){
+s.events.on('image carousel').fire(6665407);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22equinox\x22) \x3e -1',function(){
+s.events.on('image carousel').fire(6665410);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22captiva\x22) \x3e -1',function(){
+s.events.on('image carousel').fire(6665416);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22montana\x22) \x3e -1',function(){
+s.events.on('image carousel').fire(6665421);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22s10\x22) \x3e -1',function(){
+s.events.on('image carousel').fire(6665424);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22camaro\x22) \x3e -1',function(){
+s.events.on('image carousel').fire(6665430);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22prisma\x22) \x3e -1',function(){
+s.events.on('sticky navigation').fire(6665435);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22onix\x22) \x3e -1',function(){
+s.events.on('sticky navigation').fire(6665438);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22cobalt\x22) \x3e -1',function(){
+s.events.on('sticky navigation').fire(6665444);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22cruze\x22) \x3e -1',function(){
+s.events.on('sticky navigation').fire(6665449);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22spin\x22) \x3e -1',function(){
+s.events.on('sticky navigation').fire(6665452);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22trailblazer\x22) \x3e -1',function(){
+s.events.on('sticky navigation').fire(6665458);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22tracker\x22) \x3e -1',function(){
+s.events.on('sticky navigation').fire(6665463);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22equinox\x22) \x3e -1',function(){
+s.events.on('sticky navigation').fire(6665466);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22captiva\x22) \x3e -1',function(){
+s.events.on('sticky navigation').fire(6665472);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22montana\x22) \x3e -1',function(){
+s.events.on('sticky navigation').fire(6665477);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22s10\x22) \x3e -1',function(){
+s.events.on('sticky navigation').fire(6665480);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22camaro\x22) \x3e -1',function(){
+s.events.on('sticky navigation').fire(6665486);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22camaro\x22) \x3e -1',function(){
+s.events.on('gallery').fire(6665662);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22captiva\x22) \x3e -1',function(){
+s.events.on('gallery').fire(6665666);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22cobalt\x22) \x3e -1',function(){
+s.events.on('gallery').fire(6665669);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22cruze\x22) \x3e -1',function(){
+s.events.on('gallery').fire(6665676);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22equinox\x22) \x3e -1',function(){
+s.events.on('gallery').fire(6665682);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22montana\x22) \x3e -1',function(){
+s.events.on('gallery').fire(6665687);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22onix\x22) \x3e -1',function(){
+s.events.on('gallery').fire(6665697);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22prisma\x22) \x3e -1',function(){
+s.events.on('gallery').fire(6665701);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22s10\x22) \x3e -1',function(){
+s.events.on('gallery').fire(6665703);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22spin\x22) \x3e -1',function(){
+s.events.on('gallery').fire(6665710);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22tracker\x22) \x3e -1',function(){
+s.events.on('gallery').fire(6665711);
+});
+s.when('bt_data(\x27current url\x27).indexOf(\x22trailblazer\x22) \x3e -1',function(){
+s.events.on('gallery').fire(6665717);
+});
+s.domready(function(){
+s.tag('\x3cscript id\x3d\x22navegg\x22 type\x3d\x22text/javascript\x22 src\x3d\x22https://tag.navdmp.com/tm46545.js\x22\x3e\x3c/script\x3e',{tagId:5560523});
+s.secondary(function(c){
+c.when('bt_data(\x27current url\x27).indexOf(\x22prisma\x22) \x3e -1').fire(6665491);
+c.when('bt_data(\x27current url\x27).indexOf(\x22onix\x22) \x3e -1').fire(6665494);
+c.when('bt_data(\x27current url\x27).indexOf(\x22cobalt\x22) \x3e -1').fire(6665500);
+c.when('bt_data(\x27current url\x27).indexOf(\x22cruze\x22) \x3e -1').fire(6665505);
+c.when('bt_data(\x27current url\x27).indexOf(\x22spin\x22) \x3e -1').fire(6665508);
+c.when('bt_data(\x27current url\x27).indexOf(\x22trailblazer\x22) \x3e -1').fire(6665514);
+c.when('bt_data(\x27current url\x27).indexOf(\x22tracker\x22) \x3e -1').fire(6665519);
+c.when('bt_data(\x27current url\x27).indexOf(\x22equinox\x22) \x3e -1').fire(6665522);
+c.when('bt_data(\x27current url\x27).indexOf(\x22captiva\x22) \x3e -1').fire(6665528);
+c.when('bt_data(\x27current url\x27).indexOf(\x22montana\x22) \x3e -1').fire(6665533);
+c.when('bt_data(\x27current url\x27).indexOf(\x22s10\x22) \x3e -1').fire(6665536);
+c.when('bt_data(\x27current url\x27).indexOf(\x22camaro\x22) \x3e -1').fire(6665542);
+});
+});
+});
+});

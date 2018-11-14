@@ -1,0 +1,110 @@
+// Image Carousel
+var p = 0;
+function carouselCount(){
+    jQuery(window).trigger("imgcarousel");
+	p = 1;
+}
+jQuery('.q-slider').on("swipe", function(){
+    if(p === 0){
+        carouselCount();
+      };
+});
+jQuery('.slick-dots li, .gallery-image-arrow').on("click", function(){
+	if(p === 0){
+		carouselCount();
+	};
+});
+
+// Photo Gallery
+var galleryCount = 0;
+function galleryTrigger(){
+	if(galleryCount === 0){
+		jQuery(window).trigger("photogallery");
+			galleryCount = 1;
+	}
+}
+jQuery('.q-mod-gallery-preview, .q-gallery-preview').on("click", function(){
+    divListener = setInterval(function(){
+		if(jQuery('.q-modal-content').length > 0){
+			jQuery('.q-slider').on("swipe", function(){
+				galleryTrigger();
+			})
+			jQuery('.js-filmstrip-frame, .gallery-image-arrow, .q-slider-item').on("click", function(){
+				galleryTrigger();
+			})	
+		clearInterval(divListener);
+		}
+	})
+});
+
+// Video
+function getDuration(array){
+var minutes = parseInt(array[0]) * 60;
+var seconds = parseInt(array[1]);
+var totaltime = minutes + seconds;
+return totaltime;
+}
+
+function replaceLetters(word){
+var letters =  ["á", "é", "í", "ó", "ú", "ü", "ñ"];
+var correctLetters = ["a", "e", "i", "o", "u", "u", "n"];
+
+var length = letters.length;
+for(var i = 0; i < length; i++){
+var index = word.indexOf(letters[i]);
+if(index !== -1){
+var regex = new RegExp(word[index], 'g');
+word = word.replace(regex, correctLetters[i]);
+}
+}
+return word;
+}
+
+
+jQuery('div.q-posterframe .stat-image-link, div.q-posterframe').on("mouseup", function(){
+    var videoCount = 1;
+    var totalTime;
+    var quartileTime;
+    var quarterTime = 1;
+    var videoTitle = jQuery(this).find('img').attr('alt').toLowerCase().replace(':','');
+    videoTitle = replaceLetters(videoTitle);
+    totalTime = parseInt(jQuery(this).parents('.video_brightcove').find('video')[0].duration)
+    videoDiv = jQuery(this).parents('.video_brightcove').find('video').parent('div')
+	quartileTime = parseInt(totalTime / 4);
+	jQuery(window).trigger('startvideo', [videoTitle]);
+
+	var checkTime = setInterval(function(){
+		if(videoDiv.attr('class').indexOf('vjs-playing') > -1){
+		if(videoCount === quartileTime){
+			jQuery(window).trigger('quartile', ['quartile' + ' ' + quarterTime, videoTitle]);
+        if(quarterTime === 4){
+            clearInterval(checkTime);
+            }
+			quarterTime++;
+			videoCount = 0;
+		}
+		videoCount++;
+		}
+},1000);
+});
+
+// One Minute Engagement
+var timecounter = 0;
+var timeID = setInterval(timeSpent, 1000);
+function timeSpent(){
+if(timecounter === 60){
+jQuery(window).trigger('timeComplete');
+clearInterval(timeID);
+}
+else{++timecounter;}
+}
+
+
+//Colors
+var coloru= 0;
+
+ jQuery('.q-colorizer-tabs .tab-title').on('click',function(){
+     if (coloru==0) {
+ 		jQuery(window).trigger('color'); coloru++;
+ 	}
+ });

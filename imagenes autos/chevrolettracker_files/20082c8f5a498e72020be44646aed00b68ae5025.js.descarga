@@ -1,0 +1,19 @@
+// Session ID
+(function(){
+    try{
+    if(sessionStorage.getItem('csid') === null){
+        sessionStorage.setItem('csid', Math.random().toString(36).substring(2,12));
+        return sessionStorage.getItem('csid');
+    } else{return sessionStorage.getItem('csid');}
+    } catch(e){return 'unsupported'}
+}());
+
+// Persistent Browser ID
+(function(){
+    try{
+    if(localStorage.getItem('pbid') === null){
+        localStorage.setItem('pbid', Math.random().toString(36).substring(2,12).toUpperCase());
+        return localStorage.getItem('pbid');
+    } else{return localStorage.getItem('pbid');}
+    } catch(e){return 'storage is not supported'}
+}());
