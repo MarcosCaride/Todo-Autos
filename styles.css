@@ -236,10 +236,10 @@ h1{
 }
 
 .fa-user{
-  color: white;
+  color: black;
 }
 .fa-home{
-  color: white;
+  color: black;
 }
 
 .item{
@@ -263,5 +263,7 @@ h1{
 form{
 width: 50%;
 margin-left: 25%;
+margin-right: 25%;
+text-align: center;
 
 }
