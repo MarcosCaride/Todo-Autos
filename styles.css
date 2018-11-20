@@ -220,12 +220,16 @@ body{
   }
 
   .boximg{
-    /* float: right; */
+    background-color: gray;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+    overflow: hidden;
   }
 
 h2{
   text-align: center;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 
 
 }
