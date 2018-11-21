@@ -48,7 +48,7 @@
    display: block;
    padding: 10px;
    border-left: 1px solid white;
-	withd: 33%;
+	width: 33%;
 
  }
 
@@ -68,7 +68,7 @@
 
  #menu>li {
    float: left;
-   width: 24%;
+   width: 33%;
    text-align: center;
  }
 
