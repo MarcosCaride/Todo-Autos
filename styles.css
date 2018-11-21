@@ -226,6 +226,9 @@ body{
     font-size: 20px;
     overflow: hidden;
   }
+.boximg p{
+    text-align: center;
+}
 
 h2{
   text-align: center;
