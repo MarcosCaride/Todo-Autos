@@ -53,7 +53,7 @@
  }
 
  #menu>li>ul a {
-   background-color: #EEE;
+   background-color: #aeb4bf;
    color: black;
    padding: 10px;
    display: block;
@@ -63,7 +63,7 @@
 
  #menu li>a:hover {
    color: black;
-   background-color: rgb(3, 1, 5);
+   background-color: #aeb4bf;
  }
 
  #menu>li {
@@ -90,7 +90,7 @@ ul{
   width: 20%;
 }
 ul li a{
-  background-color: rgba(209, 209, 209,0.30) !important;
+  background-color: #aeb4bf !important;
 
 }
 /* Style the search field */
